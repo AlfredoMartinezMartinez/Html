@@ -3,7 +3,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>CotBot</title>
-<script src="/assets/jquery.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poller+One"
 	rel="stylesheet">
 <style>
@@ -176,13 +177,13 @@ img {
 	
 			//and change the body´s background to our random color
 			$('body').css("background", randomRGBA);
-			// Display the RGBA value in an alert window
-			alert(randomRGBA);
+		// Display the RGBA value in an alert window
+		//alert(randomRGBA);
 		});
-		
-		 $('.moves').click(function(){
-			    $('img').toggle();
-			  });
+	
+		$('.moves').click(function() {
+			$('img').toggle();
+		});
 	</script>
 
 </body>
