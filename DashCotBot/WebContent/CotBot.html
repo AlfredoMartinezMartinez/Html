@@ -125,13 +125,20 @@ keyframes blink { 50%{
 		<div class="foot"></div>
 	</div>
 	<button class="flash">laser eyes on/off</button>
+	<button class="color">change color!</button>
 	<script>
 		//When eyes button is clicked, toggle laser class
-    	$('.flash').click(function(){
-    		$('.brain').toggleClass('laser');
-    	});
-	
-
-</script>
+		$('.flash').click(function() {
+			$('.brain').toggleClass('laser');
+		});
+		//When color clicked change color background
+		$('.color').click(function() {
+			var red = Math.floor(Math.random() * 255);
+			var green = Math.floor(Math.random() * 255);
+			var blue = Math.floor(Math.random() * 255);
+			//Display the number in an alert window
+			alert(red + "," + green + "," + blue);
+		});
+	</script>
 
 </body>
